@@ -1,0 +1,5 @@
+#HSQL in-memory db which was the original configuration. And now it is no longer used.
+#db.driver=org.hsqldb.jdbcDriver
+#db.url=jdbc:hsqldb:mem:task7
+#db.username=sa
+#db.password=

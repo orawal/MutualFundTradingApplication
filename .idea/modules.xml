@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/task7-core/task7-core.iml" filepath="$PROJECT_DIR$/task7-core/task7-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task7-mvc.iml" filepath="$PROJECT_DIR$/task7-mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task7-web-common/task7-web-common.iml" filepath="$PROJECT_DIR$/task7-web-common/task7-web-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task7-web-servlet-jsp/task7-web-servlet-jsp.iml" filepath="$PROJECT_DIR$/task7-web-servlet-jsp/task7-web-servlet-jsp.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,29 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<div class="well sidebar-nav">
+    <ul class="nav nav-list">
+        <li class="nav-header">Hi ${sessionScope.employee.userName} !</li>
+
+
+        <li><a href="/employee/home"><i class="icon-home"></i> Home</a></li>
+        <c:if test="${sessionScope.employee.type != 1}">
+            <li><a href="/employee/changePassword"><i class="icon-user"></i> Change Password</a></li>
+        </c:if>
+        <li><a href="/employee/fundList"><i class="icon-list"></i> Transition day</a></li>
+        <li><a href="/employee/transitionList"><i class="icon-list"></i> Transition List</a></li>
+
+        <li class="divider"></li>
+
+
+        <li class="nav-header">Action</li>
+        <c:if test="${sessionScope.employee.type == 1}">
+            <li><a href="/employee/newEmployee"><i class="icon-plus"></i> Add Employee</a></li>
+        </c:if>
+
+        <li><a href="/employee/newCustomer"><i class="icon-plus"></i> Add Customer</a></li>
+        <li><a href="/employee/newFund"><i class="icon-plus"></i> Create Fund</a></li>
+
+    </ul>
+</div>

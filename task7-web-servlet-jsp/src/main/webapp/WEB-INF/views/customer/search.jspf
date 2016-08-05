@@ -1,0 +1,9 @@
+<form class="form-search" action="/customer/search.do" id="searchForm" method="get">
+    <div class="input-append">
+        <input type="text" name="keyWords" class="input-xxlarge search-query"
+               placeholder="search any keywords"
+               value="${requestScope.keyWords}"
+        >
+        <button type="submit" class="btn">Search</button>
+    </div>
+</form>

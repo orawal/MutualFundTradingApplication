@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="task7_pu" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.deltastar.task7.core.repository.domain.FundPriceHistory</class>
+        <class>com.deltastar.task7.core.repository.domain.Position</class>
+        <class>com.deltastar.task7.core.repository.domain.Transition</class>
+        <class>com.deltastar.task7.core.repository.domain.Customer</class>
+        <class>com.deltastar.task7.core.repository.domain.Employee</class>
+        <class>com.deltastar.task7.core.repository.domain.Fund</class>
+        <class>com.deltastar.task7.core.repository.domain.TransitionView</class>
+        <class>com.deltastar.task7.core.repository.domain.FundPriceHistoryView</class>
+        <class>com.deltastar.task7.core.repository.domain.PositionView</class>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/cfs"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.username"/>
+            <property name="hibernate.connection.password"/>
+        </properties>
+    </persistence-unit>
+</persistence>

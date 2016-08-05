@@ -1,0 +1,9 @@
+#This is a configuration for aws rds, which could not work now due to unknow issue
+#org.springframework.transaction.CannotCreateTransitionException: Could not open JPA EntityManager for transaction; nested exception is javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: Could not open connection
+#javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: Could not open connection
+#org.hibernate.exception.GenericJDBCException: Could not open connection
+#MySQL
+db.driver=com.mysql.jdbc.Driver
+db.url=jdbc:mysql://task7.cf0k8asq0rzn.us-west-2.rds.amazonaws.com:3306/cfs
+db.username=team9
+db.password=deltastar

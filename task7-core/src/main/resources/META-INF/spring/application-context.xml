@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+    <import resource="infrastructure-context.xml"/>
+
+    <!-- ========================== -->
+    <!--   Business configuration   -->
+    <!-- ========================== -->
+
+    <bean id="customerRepository" class="com.deltastar.task7.core.repository.api.impl.CustomerRepositoryImpl"/>
+    <bean id="employeeRepository" class="com.deltastar.task7.core.repository.api.impl.EmployeeRepositoryImpl"/>
+    <bean id="fundPriceHistoryRepository"
+          class="com.deltastar.task7.core.repository.api.impl.FundPriceHistoryRepositoryImpl"/>
+    <bean id="fundRepository" class="com.deltastar.task7.core.repository.api.impl.FundRepositoryImpl"/>
+    <bean id="positionRepository" class="com.deltastar.task7.core.repository.api.impl.PositionRepositoryImpl"/>
+    <bean id="transitionRepository" class="com.deltastar.task7.core.repository.api.impl.TransitionRepositoryImpl"/>
+    <bean id="transitionViewRepository"
+          class="com.deltastar.task7.core.repository.api.impl.TransitionViewRepositoryImpl"/>
+    <bean id="fundPriceHistoryViewRepository"
+          class="com.deltastar.task7.core.repository.api.impl.FundPriceHistoryViewRepositoryImpl"/>
+    <bean id="positionViewRepository" class="com.deltastar.task7.core.repository.api.impl.PositionViewRepositoryImpl"/>
+
+    <bean id="employeeService" class="com.deltastar.task7.core.service.api.impl.EmployeeServiceImpl"/>
+    <bean id="customerService" class="com.deltastar.task7.core.service.api.impl.CustomerServiceImpl"/>
+    <bean id="fundService" class="com.deltastar.task7.core.service.api.impl.FundServiceImpl"/>
+    <bean id="positionService" class="com.deltastar.task7.core.service.api.impl.PositionServiceImpl"/>
+</beans>

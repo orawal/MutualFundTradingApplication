@@ -1,0 +1,8 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<c:if test="${requestScope.hint != null}">
+    <div class="alert-success">
+        <strong>${requestScope.hint}</strong>
+    </div>
+</c:if>
